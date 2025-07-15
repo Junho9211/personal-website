@@ -38,13 +38,12 @@ export function rocketLaunchAnimation() {
     const launcherPaths = launcherSVG.getElementsByTagName('path');
 
     gsap.set(container, {
-        position: 'absolute',
+        position: 'relative',
         bottom: 0,
         left: '50%',
         xPercent: -50,
         yPercent: 0
     });
-
 
     gsap.set(speedLineGroup, {
         attr: {
@@ -83,8 +82,13 @@ export function rocketLaunchAnimation() {
     }, 0.05);
 
     const tl = gsap.timeline({
-        repeat: -1,
-        onRepeat: resetJetBubbles
+        onComplete: () => {
+            resetJetBubbles(); // optional — reset one last time after full run
+            smokeLoop.pause();
+            flameLoop.pause();
+            speedLineLoop.pause(0);
+            gsap.set(jetBubbles, { opacity: 0 }); // optionally hide the smoke at the end
+        }
     }).timeScale(2);
 
     tl.set(jetSmokeScaleGroup, {
