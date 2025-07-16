@@ -9,7 +9,10 @@
 }
 
 @theme {
-    --color-brand: #1a73e8;
+    --color-mint: oklch(96% 0.04 140);
+    --color-matcha: oklch(97% 0.035 110);
+    --color-sky-blue: oklch(97% 0.05 230);
+    --color-lavender: oklch(95% 0.04 300);
     --font-heading: "sifonn", sans-serif;
     --font-sub-heading: "Bebas Neue", sans-serif; /* Creates utility class: font-bebas */
     --font-sans: "Montserrat", sans-serif; /* Creates utility class: font-montserrat */
@@ -17,5 +20,10 @@
 }
 
 body.no-scroll {
-  overflow: hidden;
+  @apply overflow-hidden
+}
+
+/* If you're using global CSS */
+.icon-corner {
+  @apply w-16 absolute opacity-0 m-10;
 }

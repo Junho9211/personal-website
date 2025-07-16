@@ -1,8 +1,10 @@
+import { arrowBounce } from './js/arrow-bounce.js';
+import { generalAnimations } from './js/general-animations.js';
 import { rocketLaunchAnimation } from './js/rocket-launch.js';
 import { typeWriterAnimation } from './js/typewriter.js';
+import { gsap } from 'gsap';
 
 document.addEventListener('DOMContentLoaded', () => {
-
   // document.body.classList.add('no-scroll'); // Disable scroll
   // document.body.classList.add('overflow-hidden');
   // setTimeout(() => {
@@ -12,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   rocketLaunchAnimation();
   typeWriterAnimation();
-
+  generalAnimations()
+  arrowBounce()
 
 });

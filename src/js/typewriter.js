@@ -18,9 +18,9 @@ export function typeWriterAnimation() {
     gsap.timeline({ delay: 16 })
         .set(heading, { opacity: 1 })
         .to(letters, {
-        opacity: 1,
-        duration: 0.1,
-        stagger: 0.15,
-        ease: "power1.inOut"
+            opacity: 1,
+            duration: 0.1,
+            stagger: 0.15,
+            ease: "power1.inOut"
         });
 }
