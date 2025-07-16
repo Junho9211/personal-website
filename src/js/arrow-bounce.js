@@ -4,6 +4,8 @@ gsap.registerPlugin(ScrollToPlugin);
 
 export function arrowBounce() { 
     const arrow = document.getElementById('longDownArrow');
+        if (!arrow) { return }
+
 
   // Initial animation (optional)
   gsap.set(arrow, {

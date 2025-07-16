@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>My Personal Site</title>
+    <link href="/src/input.css" rel="stylesheet">
+</head>
+<body class="bg-amber-100 ">
+    <header class="px-6 fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+        <nav class="max-w-site mx-auto h-[60px] flex items-center justify-between text-xl">
+            <a href="/" class="relative w-[120px] h-[40px] overflow-hidden">
+                <img id="skiIcon" src="/src/icons/ski-icon.svg" alt="Ski Icon" class="absolute top-0 left-0 h-[40px] z-20" />
+                <p class="absolute font-heading left-[50px] top-[5px] z-10 font-bold text-lg">WIJUT</p>
+            </a>
+            <ul class="flex gap-8 font-sub-heading items-center">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Travels</a></li>
+                <li><a href="#">Food</a></li>
+            </ul>
+        </nav>
+
+    </header>
+            
+    <main class="px-6">
+        <section class="relative max-w-site mx-auto py-20">
+            <h2 class="text-center text-4xl font-sub-heading z-[10]">Travel Timeline</h2>
+            <!-- Vertical Line -->
+            <div class="absolute left-1/2 top-40 h-full w-1 bg-amber-400 transform -translate-x-1/2 z-0"></div>
+
+            <div class="flex flex-col gap-20 relative z-10 top-20">
+                <!-- left -->
+                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item" data-travel-type="domestic">
+                    <div class="sm:w-1/2 sm:pr-8 text-right">
+                        <img src="src/images/busan-temple.jpg" alt="Wellington" class="rounded-xl shadow-md w-full max-w-sm ml-auto aspect-square">
+                        <h3 class="text-2xl font-bold text-gray-800 mt-4">Wellington, NZ</h3>
+                        <p class="text-gray-600">MORE leadership conference</p>
+                        <p class="text-gray-600 text-sm">30/06/2023 - 2/07/2023</p>
+                    </div>
+                    <div class="w-5 h-5 bg-amber-500 border-4 border-white rounded-full absolute left-1/2 top-8 transform -translate-x-1/2 z-20"></div>
+                </div>
+
+                <!-- right -->
+                <div class="flex flex-col sm:flex-row-reverse items-center justify-between relative timeline-item" data-travel-type="domestic">
+                    <div class="sm:w-1/2 sm:pl-8 text-left">
+                        <!-- <img src="" alt="Hanmer" class="rounded-xl shadow-md w-full max-w-sm aspect-square"> -->
+                        <h3 class="text-2xl font-bold text-gray-800 mt-4">Hanmer Springs, NZ</h3>
+                        <p class="text-gray-600">Youth winter camp!</p>
+                        <p class="text-gray-600 text-sm">05/07/2023 - 07/07/2023</p>
+                    </div>
+                    <div class="w-5 h-5 bg-amber-500 border-4 border-white rounded-full absolute left-1/2 top-8 transform -translate-x-1/2 z-20"></div>
+                </div>
+
+                <!-- left -->
+                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item" data-travel-type="international">
+                    <div class="sm:w-1/2 sm:pr-8 text-right">
+                        <img src="src/images/melb-ocean.JPG" alt="Melbourne" class="rounded-xl shadow-md w-full max-w-sm ml-auto aspect-square">
+                        <h3 class="text-2xl font-bold text-gray-800 mt-4">Melbourne, Australia</h3>
+                        <p class="text-gray-600 text-sm">12/07/2023 - 20/07/2023</p>
+                    </div>
+                    <div class="w-5 h-5 bg-amber-500 border-4 border-white rounded-full absolute left-1/2 top-8 transform -translate-x-1/2 z-20"></div>
+                </div>
+
+                <!-- right -->
+                <div class="flex flex-col sm:flex-row-reverse items-center justify-between relative timeline-item" data-travel-type="domestic">
+                    <div class="sm:w-1/2 sm:pl-8 text-left">
+                        <!-- <img src="/images/canada-thumb.jpg" alt="" class="rounded-xl shadow-md w-full max-w-sm"> -->
+                        <h3 class="text-2xl font-bold text-gray-800 mt-4">Auckland, NZ</h3>
+                        <p class="text-gray-600">NZFTS Youth Band</p>
+                        <p class="text-gray-600 text-sm">21/07/2023 - 23/07/2023</p>
+                    </div>
+                    <div class="w-5 h-5 bg-amber-500 border-4 border-white rounded-full absolute left-1/2 top-8 transform -translate-x-1/2 z-20"></div>
+                </div>
+
+                <!-- left -->
+                <div class="flex flex-col sm:flex-row items-center justify-between relative timeline-item" data-travel-type="domestic">
+                    <div class="sm:w-1/2 sm:pr-8 text-right">
+                        <!-- <img src="src/images/busan-temple.jpg" alt="Wellington" class="rounded-xl shadow-md w-full max-w-sm ml-auto aspect-square"> -->
+                        <h3 class="text-2xl font-bold text-gray-800 mt-4">Invercargill, NZ</h3>
+                        <p class="text-gray-600">NZFTS Youth Band</p>
+                        <p class="text-gray-600 text-sm">08/08/2023 - 10/08/2023</p>
+                    </div>
+                    <div class="w-5 h-5 bg-amber-500 border-4 border-white rounded-full absolute left-1/2 top-8 transform -translate-x-1/2 z-20"></div>
+                </div>
+
+                <!-- right -->
+                <div class="flex flex-col sm:flex-row-reverse items-center justify-between relative timeline-item" data-travel-type="domestic">
+                    <div class="sm:w-1/2 sm:pl-8 text-left">
+                        <!-- <img src="/images/canada-thumb.jpg" alt="" class="rounded-xl shadow-md w-full max-w-sm"> -->
+                        <h3 class="text-2xl font-bold text-gray-800 mt-4">Ashburton, NZ</h3>
+                        <p class="text-gray-600">NZFTS Youth Band</p>
+                        <p class="text-gray-600 text-sm">15/07/2023 - 17/07/2023</p>
+                    </div>
+                    <div class="w-5 h-5 bg-amber-500 border-4 border-white rounded-full absolute left-1/2 top-8 transform -translate-x-1/2 z-20"></div>
+                </div>
+                
+                
+            </div>
+        </section>
+    </main>
+
+    
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

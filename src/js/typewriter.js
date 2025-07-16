@@ -4,6 +4,8 @@ export function typeWriterAnimation() {
     const heading = document.querySelector(".js-heading-text");
     const text = "WIJUT";
 
+    if (!heading) { return }
+
     // Step 1: Hide initially
     heading.style.opacity = 0;
 

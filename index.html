@@ -22,7 +22,7 @@
             <ul class="flex gap-8 font-sub-heading items-center">
                 <li><a href="/">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Travels</a></li>
+                <li><a href="travels.html">Travels</a></li>
                 <li><a href="#">Food</a></li>
             </ul>
         </nav>
@@ -186,11 +186,11 @@
             </div>
         </div>
 
-        <div class="relative bg-matcha">
+        <div class="relative bg-amber-100">
             <div class="max-w-site mx-auto px-6 py-20 h-full text-center">
-            <h2 class="font-sub-heading text-4xl md:text-5xl font-bold text-gray-800 mb-12">Explore my pages</h2>
+            <h2 class="js-gsap font-sub-heading text-4xl md:text-5xl font-bold text-gray-800 mb-12" data-animation="reveal-up">Explore my pages</h2>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 js-gsap" data-animation="reveal-up">
                 <!-- About -->
                 <a href="/about" class="group bg-[oklch(96%_0.05_20)] rounded-2xl p-10 transition-all hover:-translate-y-2 hover:shadow-xl duration-300 ease-in-out">
                     <div class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">👤</div>
@@ -199,7 +199,7 @@
                 </a>
 
                 <!-- Travels -->
-                <a href="/travels" class="group bg-[oklch(96%_0.05_140)] rounded-2xl p-10 transition-all hover:-translate-y-2 hover:shadow-xl duration-300 ease-in-out">
+                <a href="travels.html" class="group bg-[oklch(96%_0.05_140)] rounded-2xl p-10 transition-all hover:-translate-y-2 hover:shadow-xl duration-300 ease-in-out">
                     <div class="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">✈️</div>
                     <h3 class="text-2xl font-semibold text-gray-800 group-hover:text-amber-600">Travels</h3>
                     <p class="mt-2 text-gray-600">Check out where I've been around the world.</p>
